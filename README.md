@@ -13,4 +13,6 @@ commands will install all the required node modules.
 • Open URL "https://localhost:3003" on a browser.
 • To login as teacher enter “admin” as password
 
+!! PLEASE CHECK THIS PDF FOR WEBSITE VIEW !!
+
 [README.pdf](https://github.com/anjalisachan53/RESULT-MANAGEMENT-SYSTEM/files/13022029/README.pdf)

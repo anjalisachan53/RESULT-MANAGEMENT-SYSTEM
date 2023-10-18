@@ -1,0 +1,33 @@
+<br>
+<a href="/" class="btn btn-info " style="margin-top:5px;">Logout</a>
+<button class="btn" style="text-align: right;">
+  <a href="/teacher/add">Add Student</a>
+</button>
+<h4 >All Students</h4>
+<div class="tableDiv">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">Roll No.</th>
+        <th scope="col">Name</th>       
+        <th scope="col">Date of Birth</th>
+        <th scope="col">Score</th>
+        <th scope="col">Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+        <%  student.forEach(element => { %>
+            <tr class="head">
+                <td><%= element.Rollnum %></td>
+                <td><%= element.Name %></td>               
+                <td><%= (new Date(element.DOB)).toDateString() %></td>
+                <td><%= element.Score %></td> 
+                <td>
+                  <a href="/teacher/edit/<%= element.Rollnum %> "><img style="margin: 0px 5px;" src="https://img.icons8.com/material-outlined/30/000000/edit.png"/></a>
+                  <a href="/teacher/delete/<%= element.Rollnum %> "><img style="margin: 0px 5px;" src="https://img.icons8.com/ios-glyphs/30/000000/filled-trash.png"/></a>
+                </td>
+              </tr>
+        <%}) %>
+    </tbody>
+  </table>
+</div>
